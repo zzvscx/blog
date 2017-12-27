@@ -6,7 +6,7 @@ register = template.Library()
 #获取最新的文章
 @register.simple_tag
 def get_recent_posts(num=5):
-    return Post.objects.all().order_by('-created_time')[:num]
+    return Post.objects.all()[:num]
 
 #将文章按月份归档
 @register.simple_tag
