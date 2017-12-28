@@ -29,7 +29,7 @@ SECRET_KEY = 'lg7nm)3j^3w+er*p65t@*wo_!=5f86mz6c-o!%yp@pnqr-@^q('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG', default=False)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 USE_TZ = False
 
 # Application definition
