@@ -18,5 +18,5 @@ def deploy():
         ../venv_blog/bin/python manage.py collectstatic --noinput &&
         ../venv_blog/bin/python manage.py migrate
         '''.format(source_folder))
-    sudo('restart restart gunicorn-demo.zz.com')
+    sudo('restart gunicorn-demo.zz.com')
     sudo('service nginx reload')
