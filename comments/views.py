@@ -1,5 +1,4 @@
-from django.shortcuts import get_object_or_404,redirect
-
+from django.shortcuts import get_object_or_404,redirect,render
 from blog.models import Post
 from .models import Comment 
 from .forms import CommentForm
